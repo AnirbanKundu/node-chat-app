@@ -1,4 +1,5 @@
 var port = process.env.PORT || 5000;//(process.env.VCAP_APP_PORT || 3000);
+console.log('Port is :' + port);
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
