@@ -1,2 +1,2 @@
-web: ./node_modules/.bin/grunt server
+web: node server.js
 

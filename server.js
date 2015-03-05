@@ -1,4 +1,4 @@
-var port = (process.env.VCAP_APP_PORT || 3000);
+var port = process.env.PORT || 5000;//(process.env.VCAP_APP_PORT || 3000);
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
@@ -18,14 +18,12 @@ io.sockets.on('connection', function(socket){
 		} else{
 			console.log('New user logged in : ' + data);
 			callback(true);
-
 			socket.nickname = data;
 			console.log('Asynchronous Call.');
 			nicknames.push(socket.nickname);
 			updateNicknames();
 		}
-	});
-	
+	});	
 	function updateNicknames(){
 		io.sockets.emit('usernames', nicknames);
 	}

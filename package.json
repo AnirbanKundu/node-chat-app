@@ -1,16 +1,26 @@
 {
   "name": "socket-chat-example",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "socket.io app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "express": "4.8.5",
     "socket.io": "1.0.6"
   },
-  "scripts": {
-  "start": "node server.js"
-   },
   "engines": {
-    "node": "0.10.0",
-    "npm": "1.3.x"
-  }
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnirbanKundu/node-chat-app"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "chat"
+  ],
+  "license": "MIT"
 }
