@@ -43,7 +43,7 @@ web: node server.js
 ```git push heroku master```
 Heroku will fetch the latest code from the mentioned GITHUB repo and deploy the app in their server. 
 
-#To launch app from 
+###To launch app from Heroku
 ```heroku open```
 To view a live version of the app, it can be found [here] (https://thawing-retreat-7908.herokuapp.com/)
 
